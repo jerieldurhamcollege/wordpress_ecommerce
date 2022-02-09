@@ -7,12 +7,12 @@
  * @package ModernStoreTheme
  */
 
-function myguten_enqueue() {
+function mst_enqueue_block_editor_assets () { 
     wp_enqueue_script(
-        'myguten-script',
-        plugins_url( 'myguten.js', __FILE__ ),
+        'block-editor-script',
+        get_template_directory_uri().'/assets/js/block-editor.js',
         array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
-        filemtime( plugin_dir_path( __FILE__ ) . '/myguten.js' )
+        filemtime( get_template_directory().'/assets/js/block-editor.js')
     );
 }
-add_action( 'enqueue_block_editor_assets', 'myguten_enqueue' );
+add_action( 'enqueue_block_editor_assets','mst_enqueue_block_editor_assets' );
