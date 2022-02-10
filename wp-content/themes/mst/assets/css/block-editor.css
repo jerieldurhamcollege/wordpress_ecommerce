@@ -121,3 +121,9 @@
 .is-style-mst-file a:hover{
     color:  #04632d ;
 }
+.is-style-mst-media-text img{
+    border: 1px solid #008339 ;
+}
+.is-style-mst-video{
+    width: 50%
+}

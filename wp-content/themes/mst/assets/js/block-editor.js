@@ -65,3 +65,11 @@ wp.blocks.registerBlockStyle( 'core/file', {
     name: 'mst-file',
     label: 'MST file',
 });
+wp.blocks.registerBlockStyle( 'core/media-text', {
+    name: 'mst-media-text',
+    label: 'MST Media Text',
+});
+wp.blocks.registerBlockStyle( 'core/video', {
+    name: 'mst-video',
+    label: 'MST Video',
+});
