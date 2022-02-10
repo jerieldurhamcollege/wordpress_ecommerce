@@ -53,3 +53,15 @@ wp.blocks.registerBlockStyle( 'core/gallery', {
     name: 'mst-gallery',
     label: 'MST Gallery',
 } );
+wp.blocks.registerBlockStyle( 'core/audio', {
+    name: 'mst-audio',
+    label: 'MST Audio',
+});
+wp.blocks.registerBlockStyle( 'core/cover', {
+    name: 'mst-cover',
+    label: 'MST cover',
+});
+wp.blocks.registerBlockStyle( 'core/file', {
+    name: 'mst-file',
+    label: 'MST file',
+});

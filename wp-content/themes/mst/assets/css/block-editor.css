@@ -104,3 +104,20 @@
     box-shadow: 0.2rem 0.2rem 1rem #ccc;
     padding: 0.5em;
 }
+.is-style-mst-audio{
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+    border-radius:20px;
+    padding-top: 0.4rem;
+}
+
+.is-style-mst-cover div p{
+    font-weight: bold;
+    color: #b7f8e0 !important;
+}
+.is-style-mst-file a{
+    text-decoration: none;
+    color:  #008339 ;
+}
+.is-style-mst-file a:hover{
+    color:  #04632d ;
+}
