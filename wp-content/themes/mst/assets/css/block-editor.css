@@ -158,3 +158,33 @@
 .is-style-mst-archives li a:hover{
     color:#0ac25a ;
 }
+.is-style-mst-calendar{
+
+}
+
+.is-style-mst-calendar table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.is-style-mst-calendar table td, .is-style-mst-table th {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+.is-style-mst-calendar table td a, .is-style-mst-table th a {
+    font-weight: bold;
+    color: black;
+}
+
+.is-style-mst-calendar table tr:nth-child(even){background-color: #7cc4a9;}
+.is-style-mst-calendar table tr:nth-child(odd){background-color: #7cc4a9;}
+
+.is-style-mst-calendar table tr:hover {background-color: #b7f8e0;}
+
+.is-style-mst-calendar table th {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: left;
+    background-color: #008339 ;
+    color: white;
+}

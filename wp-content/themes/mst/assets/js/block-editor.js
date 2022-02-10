@@ -101,3 +101,7 @@ wp.blocks.registerBlockStyle( 'core/archives', {
     name: 'mst-archives',
     label: 'MST Archives',
 });
+wp.blocks.registerBlockStyle( 'core/calendar', {
+    name: 'mst-calendar',
+    label: 'MST Calendar',
+});
