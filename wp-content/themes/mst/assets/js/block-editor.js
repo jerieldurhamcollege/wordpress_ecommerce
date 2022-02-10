@@ -145,6 +145,10 @@ wp.blocks.registerBlockStyle( 'core/shortcode', {
     name: 'mst-shortcode',
     label: 'MST Shortcode',
 });
+wp.blocks.registerBlockStyle( 'core/nextpage', {
+    name: 'mst-nextpage',
+    label: 'MST Nextpage',
+});
 wp.blocks.registerBlockStyle( 'core/social-link', {
     name: 'mst-social-link',
     label: 'MST Social Link',
@@ -156,4 +160,16 @@ wp.blocks.registerBlockStyle( 'core/social-links', {
 wp.blocks.registerBlockStyle( 'core/tag-cloud', {
     name: 'mst-tag-cloud',
     label: 'MST Tag Cloud',
+});
+wp.blocks.registerBlockStyle( 'core/navigation', {
+    name: 'mst-navigation',
+    label: 'MST Navigation',
+});
+wp.blocks.registerBlockStyle( 'core/site-logo', {
+    name: 'mst-site-logo',
+    label: 'MST Site Logo',
+});
+wp.blocks.registerBlockStyle( 'core/site-title', {
+    name: 'mst-site-title',
+    label: 'MST Site Title',
 });
