@@ -60,5 +60,37 @@
     border: 1px solid #008339 ;
 }
 .is-style-mst-preformatted{
-    
+    font-family: Lato;
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+}
+.is-style-mst-pullquote{
+    color: #008339 ;
+    border-top: 4px solid #008339 ;
+    border-bottom: 4px solid #008339 ;
+}
+
+.is-style-mst-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.is-style-mst-table td, .is-style-mst-table th {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+.is-style-mst-table tr:nth-child(even){background-color: #7cc4a9;}
+
+.is-style-mst-table tr:hover {background-color: #b7f8e0;}
+
+.is-style-mst-table th {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: left;
+    background-color: #008339 ;
+    color: white;
+}
+.is-style-mst-verse{
+    font-style: italic;
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
 }

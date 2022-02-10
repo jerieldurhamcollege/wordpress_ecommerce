@@ -29,3 +29,15 @@ wp.blocks.registerBlockStyle( 'core/preformatted', {
     name: 'mst-preformatted',
     label: 'MST Preformatted',
 } );
+wp.blocks.registerBlockStyle( 'core/pullquote', {
+    name: 'mst-pullquote',
+    label: 'MST Pullquote',
+} );
+wp.blocks.registerBlockStyle( 'core/preformatted', {
+    name: 'mst-preformatted',
+    label: 'MST Preformatted',
+} );
+wp.blocks.registerBlockStyle( 'core/verse', {
+    name: 'mst-verse',
+    label: 'MST verse',
+} );
