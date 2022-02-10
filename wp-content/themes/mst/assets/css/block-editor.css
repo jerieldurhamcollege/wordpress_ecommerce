@@ -127,3 +127,27 @@
 .is-style-mst-video{
     width: 50%
 }
+.is-style-mst-button a{
+    background: #008339 ;
+    color: white;
+}
+.is-style-mst-button a:hover{
+    background: #0ac25a ;
+}
+.is-style-mst-column{
+
+}
+.is-style-mst-group{
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+    padding: 0.5em;
+}
+.is-style-mst-more{
+    color:#0ac25a ;
+}
+.is-style-mst-separator{
+    color:#0ac25a ;
+}
+.is-style-mst-spacer{
+    height: 100px;
+    background-color:#b7f8e0;
+}

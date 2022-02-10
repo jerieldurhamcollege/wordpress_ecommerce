@@ -73,3 +73,27 @@ wp.blocks.registerBlockStyle( 'core/video', {
     name: 'mst-video',
     label: 'MST Video',
 });
+wp.blocks.registerBlockStyle( 'core/button', {
+    name: 'mst-button',
+    label: 'MST Button',
+});
+wp.blocks.registerBlockStyle( 'core/column', {
+    name: 'mst-column',
+    label: 'MST Column',
+});
+wp.blocks.registerBlockStyle( 'core/group', {
+    name: 'mst-group',
+    label: 'MST Group',
+});
+wp.blocks.registerBlockStyle( 'core/more', {
+    name: 'mst-more',
+    label: 'MST More',
+});
+wp.blocks.registerBlockStyle( 'core/separator', {
+    name: 'mst-separator',
+    label: 'MST Separator',
+});
+wp.blocks.registerBlockStyle( 'core/spacer', {
+    name: 'mst-spacer',
+    label: 'MST Spacer',
+});
