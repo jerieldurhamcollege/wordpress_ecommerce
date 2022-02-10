@@ -173,3 +173,19 @@ wp.blocks.registerBlockStyle( 'core/site-title', {
     name: 'mst-site-title',
     label: 'MST Site Title',
 });
+wp.blocks.registerBlockStyle( 'core/query', {
+    name: 'mst-query',
+    label: 'MST Query',
+});
+wp.blocks.registerBlockStyle( 'core/site-tagline', {
+    name: 'mst-site-tagline',
+    label: 'MST Site Tagline',
+});
+wp.blocks.registerBlockStyle( 'core/post-featured-image', {
+    name: 'mst-post-featured-image',
+    label: 'MST Post Featured Image',
+});
+wp.blocks.registerBlockStyle( 'core/post-date', {
+    name: 'mst-post-date',
+    label: 'MST Post Date',
+});

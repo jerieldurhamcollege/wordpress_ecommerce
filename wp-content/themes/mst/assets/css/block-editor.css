@@ -269,8 +269,8 @@
    color: white;
    padding-top: 1.5rem;
    padding-bottom: 1.5rem;
-   
 }
+
 .is-style-mst-site-logo{
    
 }
@@ -288,4 +288,14 @@
 }
 .is-style-mst-nextpage{
    
+}
+.is-style-mst-post-featured-image{
+   transform: scale (1.005);
+   border: 0.2rem solid #008339 ;
+}
+.is-style-mst-site-tagline{
+   font-style: oblique;
+}
+.is-style-mst-post-date{
+   font-style: oblique;
 }
