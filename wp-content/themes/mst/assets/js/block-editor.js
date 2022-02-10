@@ -97,3 +97,7 @@ wp.blocks.registerBlockStyle( 'core/spacer', {
     name: 'mst-spacer',
     label: 'MST Spacer',
 });
+wp.blocks.registerBlockStyle( 'core/archives', {
+    name: 'mst-archives',
+    label: 'MST Archives',
+});
