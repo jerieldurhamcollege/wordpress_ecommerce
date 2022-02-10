@@ -94,3 +94,13 @@
     font-style: italic;
     box-shadow: 0.2rem 0.2rem 1rem #ccc;
 }
+.is-style-mst-image img{
+    border-radius: 8px !important;
+}
+.is-style-mst-image img:hover{
+    transform: scale(1.005) !important;
+}
+.is-style-mst-gallery{
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+    padding: 0.5em;
+}

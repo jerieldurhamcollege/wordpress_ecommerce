@@ -25,6 +25,10 @@ wp.blocks.registerBlockStyle( 'core/code', {
     name: 'mst-code',
     label: 'MST Code',
 } );
+wp.blocks.registerBlockStyle( 'core/table', {
+    name: 'mst-table',
+    label: 'MST Table',
+} );
 wp.blocks.registerBlockStyle( 'core/preformatted', {
     name: 'mst-preformatted',
     label: 'MST Preformatted',
@@ -40,4 +44,12 @@ wp.blocks.registerBlockStyle( 'core/preformatted', {
 wp.blocks.registerBlockStyle( 'core/verse', {
     name: 'mst-verse',
     label: 'MST verse',
+} );
+wp.blocks.registerBlockStyle( 'core/image', {
+    name: 'mst-image',
+    label: 'MST Image',
+} );
+wp.blocks.registerBlockStyle( 'core/gallery', {
+    name: 'mst-gallery',
+    label: 'MST Gallery',
 } );
