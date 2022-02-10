@@ -3,12 +3,21 @@
     src: url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700;1,900&display=swap);  
     /* Also added Lato font files to assets folder in case that's the preferred way. */ 
 }
+*{
+    font-family: Lato;
+    font-size: 16px
+}
+
 .is-style-mst-heading{
-    /* color: yellow; */
     font-family: Lato;
     font-weight: bold;
 }
+
 .is-style-mst-paragraph{
-    /* color: yellow; */
     font-family: Lato;
 }
+
+.is-style-mst-list{
+    list-style-type: square;
+}
+
