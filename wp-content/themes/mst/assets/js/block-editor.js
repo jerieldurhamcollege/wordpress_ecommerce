@@ -141,3 +141,19 @@ wp.blocks.registerBlockStyle( 'core/search', {
     name: 'mst-search',
     label: 'MST Search',
 });
+wp.blocks.registerBlockStyle( 'core/shortcode', {
+    name: 'mst-shortcode',
+    label: 'MST Shortcode',
+});
+wp.blocks.registerBlockStyle( 'core/social-link', {
+    name: 'mst-social-link',
+    label: 'MST Social Link',
+});
+wp.blocks.registerBlockStyle( 'core/social-links', {
+    name: 'mst-social-links',
+    label: 'MST Social Links',
+});
+wp.blocks.registerBlockStyle( 'core/tag-cloud', {
+    name: 'mst-tag-cloud',
+    label: 'MST Tag Cloud',
+});

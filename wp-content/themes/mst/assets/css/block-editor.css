@@ -247,5 +247,20 @@
 }
 .is-style-mst-search div input{
     background: #b7f7df ;
-
+}
+/* .is-style-mst-social-link:not(.is-style-logos-only) a{
+    background-color: #0d66c2;
+    color: #fff;
+}  */
+/* .wp-block-social-links:not(.is-style-logos-only){
+    background-color: red;
+    color: #fff;
+} */
+.wp-block-social-links:not(.is-style-logos-only) a {
+    background-color: #0d66c2;
+    color: #fff;
+}
+.is-style-mst-social-links{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
