@@ -21,3 +21,44 @@
     list-style-type: square;
 }
 
+.is-style-mst-quote{
+    display:block;
+    background: #fff;
+    padding: 1rem 1.2rem 1rem 3rem;
+    margin: 0 0 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: rgb(82, 81, 81);
+    text-align: justify;
+
+    border-left: 1rem solid #008339 ;
+    border-right: 0.2rem solid #008339 ;
+
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+}
+
+.is-style-mst-quote::before{
+    /*Left Double Quote*/
+    content: "\201C"; 
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(82, 81, 81);
+    position: absolute;
+    left: 0.6rem;
+    top:0.4rem;
+}
+
+.is-style-mst-quote::after{
+    content: "";
+}
+
+.is-style-mst-code{
+    background:rgb(32, 32, 32);
+}
+.is-style-mst-code>code{
+    color: #008339 ;
+    border: 1px solid #008339 ;
+}
+.is-style-mst-preformatted{
+    
+}
