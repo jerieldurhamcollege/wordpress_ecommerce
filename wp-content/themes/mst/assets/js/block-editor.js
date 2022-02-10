@@ -105,3 +105,39 @@ wp.blocks.registerBlockStyle( 'core/calendar', {
     name: 'mst-calendar',
     label: 'MST Calendar',
 });
+wp.blocks.registerBlockStyle( 'core/categories', {
+    name: 'mst-categories',
+    label: 'MST Categories',
+});
+wp.blocks.registerBlockStyle( 'core/html', {
+    name: 'mst-html',
+    label: 'MST HTML',
+});
+wp.blocks.registerBlockStyle( 'core/latest-comments', {
+    name: 'mst-latest-comments',
+    label: 'MST Latest Comments',
+});
+wp.blocks.registerBlockStyle( 'core/latest-posts', {
+    name: 'mst-latest-posts',
+    label: 'MST Latest posts',
+});
+wp.blocks.registerBlockStyle( 'core/post-title', {
+    name: 'mst-post-title',
+    label: 'MST Post Title',
+});
+wp.blocks.registerBlockStyle( 'core/post-excerpt', {
+    name: 'mst-post-excerpt',
+    label: 'MST Post Excerpt',
+});
+wp.blocks.registerBlockStyle( 'core/page-list', {
+    name: 'mst-page-list',
+    label: 'MST Page List',
+});
+wp.blocks.registerBlockStyle( 'core/rss', {
+    name: 'mst-rss',
+    label: 'MST RSS',
+});
+wp.blocks.registerBlockStyle( 'core/search', {
+    name: 'mst-search',
+    label: 'MST Search',
+});
