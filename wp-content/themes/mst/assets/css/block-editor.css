@@ -222,6 +222,18 @@
 .is-style-mst-post-title{
     color: #008339 ;
 }
+.is-style-mst-post-title a:hover{
+    color:#0ac25a;
+}
+.is-style-mst-post-title a{
+    color: #008339 ;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.is-style-mst-post-title :visited{
+    color: #008339 ;
+    font-size: 1.5rem;
+}
 .is-style-mst-post-excerpt{
     font-style: oblique;
 }
@@ -298,4 +310,36 @@
 }
 .is-style-mst-post-date{
    font-style: oblique;
+}
+.is-style-mst-post-author{
+    color: #008339 ;
+}
+.is-style-mst-post-navigation-link a:hover{
+    color:#0ac25a;
+}
+.is-style-mst-post-navigation-link a{
+    color: #008339 ;
+    text-decoration: none;
+}
+.is-style-mst-post-navigation-link :visited{
+    color: #008339 ;
+}
+.is-style-mst-post-comments{
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+}
+.is-style-mst-loginout{
+    color: #008339 ;
+}
+.is-style-mst-loginout a:hover{
+    color:#0ac25a;
+}
+.is-style-mst-loginout a{
+    color: #008339 ;
+    text-decoration: none;
+}
+.is-style-mst-loginout :visited{
+    color: #008339 ;
+}
+.is-style-mst-term-description{
+    font-style: italic;
 }

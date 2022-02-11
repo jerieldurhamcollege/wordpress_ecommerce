@@ -189,3 +189,23 @@ wp.blocks.registerBlockStyle( 'core/post-date', {
     name: 'mst-post-date',
     label: 'MST Post Date',
 });
+wp.blocks.registerBlockStyle( 'core/post-author', {
+    name: 'mst-post-author',
+    label: 'MST Post Author',
+});
+wp.blocks.registerBlockStyle( 'core/post-navigation-link', {
+    name: 'mst-post-navigation-link',
+    label: 'MST Post Navigation Link',
+});
+wp.blocks.registerBlockStyle( 'core/post-comments', {
+    name: 'mst-post-comments',
+    label: 'MST Post Comments',
+});
+wp.blocks.registerBlockStyle( 'core/loginout', {
+    name: 'mst-loginout',
+    label: 'MST Loginout',
+});
+wp.blocks.registerBlockStyle( 'core/term-description', {
+    name: 'mst-term-description',
+    label: 'MST Term Description',
+});
