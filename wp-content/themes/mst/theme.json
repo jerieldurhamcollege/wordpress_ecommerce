@@ -1,6 +1,6 @@
 {
     "$schema": "https://schemas.wp.org/trunk/theme.json",
-    "version": 1,
+    "version": 2,
     "settings": {
         "color": {
             "defaultPalette": false,
@@ -14,8 +14,8 @@
             ]
         },
         "layout": {
-            "contentSize": "1000px",
-            "wideSize": "1200"
+            "contentSize": "80%",
+            "wideSize": "90%"
         }
     }
 }

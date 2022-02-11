@@ -7,7 +7,31 @@
     font-family: Lato;
     font-size: 16px
 }
-
+a:hover{
+    color:#0ac25a !important;
+}
+a{
+    color: #008339 !important ;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+a:visited{
+    color: #008339 !important ;
+    font-size: 1.5rem;
+}
+.post-thumbnail{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.entry-content > *{
+    width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.alignwide{
+    width: 90%;
+}
 .is-style-mst-heading{
     font-family: Lato;
     font-weight: bold;
@@ -71,7 +95,6 @@
 
 .is-style-mst-table {
     border-collapse: collapse;
-    width: 100%;
 }
 
 .is-style-mst-table td, .is-style-mst-table th {
@@ -125,7 +148,9 @@
     border: 1px solid #008339 ;
 }
 .is-style-mst-video{
-    width: 50%
+}
+.is-style-mst-video video{
+    max-height: 100vh;
 }
 .is-style-mst-button a{
     background: #008339 ;
@@ -164,7 +189,6 @@
 
 .is-style-mst-calendar table {
     border-collapse: collapse;
-    width: 100%;
 }
 
 .is-style-mst-calendar table td, .is-style-mst-table th {
@@ -230,7 +254,7 @@
     font-size: 1.5rem;
     text-decoration: none;
 }
-.is-style-mst-post-title :visited{
+.is-style-mst-post-title a:visited{
     color: #008339 ;
     font-size: 1.5rem;
 }
@@ -281,6 +305,8 @@
    color: white;
    padding-top: 1.5rem;
    padding-bottom: 1.5rem;
+   padding-left: 10%;
+   padding-right: 10%;
 }
 
 .is-style-mst-site-logo{
@@ -294,7 +320,7 @@
     font-size: 1.5rem;
     text-decoration: none;
 }
-.is-style-mst-site-title :visited{
+.is-style-mst-site-title a:visited{
     color: #008339 ;
     font-size: 1.5rem;
 }
@@ -321,7 +347,7 @@
     color: #008339 ;
     text-decoration: none;
 }
-.is-style-mst-post-navigation-link :visited{
+.is-style-mst-post-navigation-link a:visited{
     color: #008339 ;
 }
 .is-style-mst-post-comments{
@@ -337,7 +363,7 @@
     color: #008339 ;
     text-decoration: none;
 }
-.is-style-mst-loginout :visited{
+.is-style-mst-loginout a:visited{
     color: #008339 ;
 }
 .is-style-mst-term-description{
