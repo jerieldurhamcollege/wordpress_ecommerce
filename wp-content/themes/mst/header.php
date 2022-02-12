@@ -38,11 +38,8 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$mst_description = get_bloginfo( 'description', 'display' );
-			if ( $mst_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $mst_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			?>
+
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
