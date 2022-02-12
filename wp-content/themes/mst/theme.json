@@ -7,9 +7,29 @@
             "custom": false,
             "palette": [
                 {
-                "slug": "darkred",
-                "color": "#450000",
-                "name": "Black"
+                "slug": "primaryGreen",
+                "color": "#008339",
+                "name": "Primary Green"
+                },
+                {
+                "slug": "secondaryGreen",
+                "color": "#0ac25a",
+                "name": "Secondary Green"
+                },
+                {
+                "slug": "lightGreen",
+                "color": "#b7f8e0",
+                "name": "Light Green"
+                },
+                {
+                "slug": "silvershite",
+                "color": "#ccc",
+                "name": "Silver White"
+                },
+                {
+                "slug": "black",
+                "color": "#000000",
+                "name": "black"
                 }
             ]
         },

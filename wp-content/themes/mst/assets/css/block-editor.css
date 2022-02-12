@@ -8,15 +8,15 @@
     font-size: 16px
 }
 a:hover{
-    color:#0ac25a !important;
+    color:#0ac25a;
 }
 a{
-    color: #008339 !important ;
+    color: #008339 ;
     font-size: 1.5rem;
     text-decoration: none;
 }
 a:visited{
-    color: #008339 !important ;
+    color: #008339 ;
     font-size: 1.5rem;
 }
 .post-thumbnail{
