@@ -1,0 +1,371 @@
+@font-face {
+    font-family: Lato;  
+    src: url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700;1,900&display=swap);  
+    /* Also added Lato font files to assets folder in case that's the preferred way. */ 
+}
+*{
+    font-family: Lato;
+    font-size: 16px
+}
+a:hover{
+    color:#0ac25a !important;
+}
+a{
+    color: #008339 !important ;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+a:visited{
+    color: #008339 !important ;
+    font-size: 1.5rem;
+}
+.post-thumbnail{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.entry-content > *{
+    width: 80%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.alignwide{
+    width: 90%;
+}
+.is-style-mst-heading{
+    font-family: Lato;
+    font-weight: bold;
+}
+
+.is-style-mst-paragraph{
+    font-family: Lato;
+}
+
+.is-style-mst-list{
+    list-style-type: square;
+}
+
+.is-style-mst-quote{
+    display:block;
+    background: #fff;
+    padding: 1rem 1.2rem 1rem 3rem;
+    margin: 0 0 1.2rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: rgb(82, 81, 81);
+    text-align: justify;
+
+    border-left: 1rem solid #008339 ;
+    border-right: 0.2rem solid #008339 ;
+
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+}
+
+.is-style-mst-quote::before{
+    /*Left Double Quote*/
+    content: "\201C"; 
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(82, 81, 81);
+    position: absolute;
+    left: 0.6rem;
+    top:0.4rem;
+}
+
+.is-style-mst-quote::after{
+    content: "";
+}
+
+.is-style-mst-code{
+    background:rgb(32, 32, 32);
+}
+.is-style-mst-code>code{
+    color: #008339 ;
+    border: 1px solid #008339 ;
+}
+.is-style-mst-preformatted{
+    font-family: Lato;
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+}
+.is-style-mst-pullquote{
+    color: #008339 ;
+    border-top: 4px solid #008339 ;
+    border-bottom: 4px solid #008339 ;
+}
+
+.is-style-mst-table {
+    border-collapse: collapse;
+}
+
+.is-style-mst-table td, .is-style-mst-table th {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+.is-style-mst-table tr:nth-child(even){background-color: #7cc4a9;}
+
+.is-style-mst-table tr:hover {background-color: #b7f8e0;}
+
+.is-style-mst-table th {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: left;
+    background-color: #008339 ;
+    color: white;
+}
+.is-style-mst-verse{
+    font-style: italic;
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+}
+.is-style-mst-image img{
+    border-radius: 8px !important;
+}
+.is-style-mst-image img:hover{
+    transform: scale(1.005) !important;
+}
+.is-style-mst-gallery{
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+    padding: 0.5em;
+}
+.is-style-mst-audio{
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+    border-radius:20px;
+    padding-top: 0.4rem;
+}
+
+.is-style-mst-cover div p{
+    font-weight: bold;
+    color: #b7f8e0 !important;
+}
+.is-style-mst-file a{
+    text-decoration: none;
+    color:  #008339 ;
+}
+.is-style-mst-file a:hover{
+    color:  #04632d ;
+}
+.is-style-mst-media-text img{
+    border: 1px solid #008339 ;
+}
+.is-style-mst-video{
+}
+.is-style-mst-video video{
+    max-height: 100vh;
+}
+.is-style-mst-button a{
+    background: #008339 ;
+    color: white;
+}
+.is-style-mst-button a:hover{
+    background: #0ac25a ;
+}
+.is-style-mst-column{
+
+}
+.is-style-mst-group{
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+    padding: 0.5em;
+}
+.is-style-mst-more{
+    color:#0ac25a ;
+}
+.is-style-mst-separator{
+    color:#0ac25a ;
+}
+.is-style-mst-spacer{
+    height: 100px;
+    background-color:#b7f8e0;
+}
+.is-style-mst-archives li a{
+    text-decoration: none;
+    color: #008339 ;
+}
+.is-style-mst-archives li a:hover{
+    color:#0ac25a ;
+}
+.is-style-mst-calendar{
+
+}
+
+.is-style-mst-calendar table {
+    border-collapse: collapse;
+}
+
+.is-style-mst-calendar table td, .is-style-mst-table th {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+.is-style-mst-calendar table td a, .is-style-mst-table th a {
+    font-weight: bold;
+    color: black;
+}
+
+.is-style-mst-calendar table tr:nth-child(even){background-color: #7cc4a9;}
+.is-style-mst-calendar table tr:nth-child(odd){background-color: #7cc4a9;}
+
+.is-style-mst-calendar table tr:hover {background-color: #b7f8e0;}
+
+.is-style-mst-calendar table th {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: left;
+    background-color: #008339 ;
+    color: white;
+}
+.is-style-mst-categories li a{
+    text-decoration: none;
+    color: #008339 ;
+}
+.is-style-mst-categories li a:hover{
+    color:#0ac25a ;
+}
+.is-style-mst-html{
+
+}
+.is-style-mst-latest-comments{
+
+}
+.is-style-mst-latest-comments li{
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+    padding: 0.5em;
+}
+.is-style-mst-latest-comments li article footer a{
+    text-decoration: none;
+    color: #008339 ;
+}
+.is-style-mst-latest-comments li article footer a:hover{
+    color:#0ac25a ;
+}
+.is-style-mst-latest-posts li a{
+    text-decoration: none;
+    color: #008339;
+}
+.is-style-mst-latest-posts li a:hover{
+    color:#0ac25a;
+}
+.is-style-mst-post-title{
+    color: #008339 ;
+}
+.is-style-mst-post-title a:hover{
+    color:#0ac25a;
+}
+.is-style-mst-post-title a{
+    color: #008339 ;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.is-style-mst-post-title a:visited{
+    color: #008339 ;
+    font-size: 1.5rem;
+}
+.is-style-mst-post-excerpt{
+    font-style: oblique;
+}
+
+.is-style-mst-page-list li a:hover{
+    color:#0ac25a;
+}
+.is-style-mst-page-list li a{
+    color: #008339 ;
+}
+.is-style-mst-rss li div a:hover{
+    color:#0ac25a;
+}
+.is-style-mst-rss li div a{
+    color: #008339 ;
+}
+.is-style-mst-search{
+    color: #008339 ;
+}
+.is-style-mst-search div button{
+    background: #008339 ;
+    color: white;
+}
+.is-style-mst-search div input{
+    background: #b7f7df ;
+}
+/* .is-style-mst-social-link:not(.is-style-logos-only) a{
+    background-color: #0d66c2;
+    color: #fff;
+}  */
+/* .wp-block-social-links:not(.is-style-logos-only){
+    background-color: red;
+    color: #fff;
+} */
+.wp-block-social-links:not(.is-style-logos-only) a {
+    background-color: #0d66c2;
+    color: #fff;
+}
+.is-style-mst-social-links{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.is-style-mst-navigation{
+   background: #008339 ;
+   color: white;
+   padding-top: 1.5rem;
+   padding-bottom: 1.5rem;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+
+.is-style-mst-site-logo{
+   
+}
+.is-style-mst-site-title a:hover{
+    color:#0ac25a;
+}
+.is-style-mst-site-title a{
+    color: #008339 ;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.is-style-mst-site-title a:visited{
+    color: #008339 ;
+    font-size: 1.5rem;
+}
+.is-style-mst-nextpage{
+   
+}
+.is-style-mst-post-featured-image{
+   transform: scale (1.005);
+   border: 0.2rem solid #008339 ;
+}
+.is-style-mst-site-tagline{
+   font-style: oblique;
+}
+.is-style-mst-post-date{
+   font-style: oblique;
+}
+.is-style-mst-post-author{
+    color: #008339 ;
+}
+.is-style-mst-post-navigation-link a:hover{
+    color:#0ac25a;
+}
+.is-style-mst-post-navigation-link a{
+    color: #008339 ;
+    text-decoration: none;
+}
+.is-style-mst-post-navigation-link a:visited{
+    color: #008339 ;
+}
+.is-style-mst-post-comments{
+    box-shadow: 0.2rem 0.2rem 1rem #ccc;
+}
+.is-style-mst-loginout{
+    color: #008339 ;
+}
+.is-style-mst-loginout a:hover{
+    color:#0ac25a;
+}
+.is-style-mst-loginout a{
+    color: #008339 ;
+    text-decoration: none;
+}
+.is-style-mst-loginout a:visited{
+    color: #008339 ;
+}
+.is-style-mst-term-description{
+    font-style: italic;
+}

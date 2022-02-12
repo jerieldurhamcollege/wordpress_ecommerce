@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "defaultPalette": false,
+            "custom": false,
+            "palette": [
+                {
+                "slug": "darkred",
+                "color": "#450000",
+                "name": "Black"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "80%",
+            "wideSize": "90%"
+        }
+    }
+}
