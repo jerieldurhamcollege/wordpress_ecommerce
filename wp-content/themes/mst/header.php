@@ -40,13 +40,17 @@
 		</div>
 		<div id="mst-navbar">
 		<input type="checkbox" id="toggle" unchecked/>
-				<?php
+		<div class="mst-menu-container">
+		<?php
 				wp_nav_menu(
 					array(
 						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
+						'menu_id'        => 'mst-primary-menu',
+						'menu_class' => 'mst-menu'
 					)
 				);
 				?>
+		</div>
+				
 		</div>
 	</header>

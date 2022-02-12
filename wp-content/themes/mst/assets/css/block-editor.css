@@ -30,7 +30,14 @@
     display: flex;
     justify-content: right;
 }
-#mst-navbar #primary-menu ul{
+.mst-menu-container{
+    width: 100%;
+}
+.mst-menu-container div{
+    width: 100%;
+}
+/* STYLES IF NO MENU IS ASSIGNED ON DASHBOARD */
+#mst-navbar .mst-menu-container #mst-primary-menu ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -38,11 +45,11 @@
 
   }
   
-#mst-navbar #primary-menu ul li {
+#mst-navbar .mst-menu-container #mst-primary-menu li {
     float: left;
   }
   
-#mst-navbar #primary-menu ul li a {
+#mst-navbar .mst-menu-container #mst-primary-menu li a {
     display: block;
     color: white;
     text-align: center;
@@ -50,14 +57,39 @@
     text-decoration: none;
   }
   
-#mst-navbar #primary-menu ul li a:hover {
+#mst-navbar .mst-menu-container #mst-primary-menu li a:hover {
+    background-color: #0ac25a;
+}
+/* END: STYLES IF NO MENU IS ASSIGNED ON DASHBOARD */
+
+/* STYLES IF MENU IS ASSIGNED ON DASHBOARD */
+#mst-navbar .mst-menu-container div #mst-primary-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+#mst-navbar .mst-menu-container div #mst-primary-menu li {
+    float: left;
+  }
+  
+#mst-navbar .mst-menu-container div #mst-primary-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+  }
+  
+#mst-navbar .mst-menu-container div #mst-primary-menu li a:hover {
     background-color: #0ac25a;
 }
 #nav-logo .site-title a{
     text-decoration: none;
     color: white;
 }
-.menu{
+.mst-menu{
     flex-direction: row;
     display: flex;
     height: 100%;
@@ -65,7 +97,10 @@
     justify-content: right;
     align-items: center;
 }
-.menu a{
+#toggle+div{
+    display: flex;
+}
+.mst-menu a{
     clear: right;
     text-decoration: none;
     margin-right: 1em;
@@ -73,16 +108,14 @@
     font-size: 1em;
     color: #ac662a;
 }
-.menu a:hover{
+.mst-menu a:hover{
     font-weight: bold;
 }
 #toggle{
     display: none;
 }
 #hamburger{
-    display: none
-}
-#hamburger:hover{
+    display: none;
     cursor: pointer;
 }
 /* HEADER END */
@@ -456,13 +489,15 @@ a:visited{
 
 @media only screen and (max-width: 768px) {
     /* Navbar smaller screens */
-    .menu{
+    .mst-menu{
         width: 100%;
         flex-direction: column;
-        display: none;
         align-items: start;
     }
-    #toggle:checked~.menu {
+    #toggle+div{
+        display: none;
+    }
+    #toggle:checked~ .mst-menu-container {
         display: flex;
     }
     #hamburger{
@@ -472,15 +507,27 @@ a:visited{
         user-select: none;
     }
     #mst-navbar{
+        justify-content: left;
         width: 100%;
     }
-    #mst-navbar #primary-menu ul{
+    /* STYLES IF NO MENU IS ASSIGNED ON DASHBOARD */
+
+    #mst-navbar .mst-menu-container #mst-primary-menu ul{
         width:100%
     }
-    #mst-navbar #primary-menu ul li{
+    #mst-navbar .mst-menu-container #mst-primary-menu ul li{
         width:100%
     }
-    #mst-navbar #primary-menu ul li a{
+    #mst-navbar .mst-menu-container #mst-primary-menu ul li a{
+        text-align: left;
+    }
+    #mst-navbar .mst-menu-container div #mst-primary-menu{
+        width:100%
+    }
+    #mst-navbar .mst-menu-container div #mst-primary-menu li{
+        width:100%
+    }
+    #mst-navbar .mst-menu-container div #mst-primary-menu li a{
         text-align: left;
     }
 }
