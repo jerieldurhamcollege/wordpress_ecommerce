@@ -15,6 +15,7 @@
     width: 100%;
     margin: auto;
     flex-wrap: wrap;
+    padding: 0.1rem 10% 0.1rem 10%;
 }
 #mst-header .nav-logo{
     max-width: 35%;
@@ -51,7 +52,7 @@
   
 #mst-navbar .mst-menu-container #mst-primary-menu li a {
     display: block;
-    color: white;
+    color: white !important;
     text-align: center;
     padding: 1em;
     text-decoration: none;
@@ -85,9 +86,16 @@
 #mst-navbar .mst-menu-container div #mst-primary-menu li a:hover {
     background-color: #0ac25a;
 }
+#nav-logo{
+    display: flex;
+    align-items: center
+}
 #nav-logo .site-title a{
     text-decoration: none;
-    color: white;
+    color: white !important;
+}
+#nav-logo *{
+   margin: 0;
 }
 .mst-menu{
     flex-direction: row;
@@ -119,13 +127,31 @@
     cursor: pointer;
 }
 /* HEADER END */
-
+/* FOOTER START */
+#colophon{
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    background: #008339;
+    color: white;
+    padding: 0.1rem 10% 0.1rem 10%;
+}
+#colophon div p a{
+    color: white !important;
+    font-size: 1rem;
+    text-decoration:underline;
+}
+#footer-links{
+    display: flex;
+    place-items: center;
+}
+/* FOOTER END */
 
 a:hover{
     color:#0ac25a;
 }
 a{
-    color: #008339 ;
+    color: #008339 !important;
     font-size: 1.5rem;
     text-decoration: none;
 }
