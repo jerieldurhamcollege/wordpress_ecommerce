@@ -25,35 +25,32 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'mst' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
+	<header id="mst-header" class="site-header">
+		<div id="nav-toggle">
+			<label id="hamburger" for="toggle">&#9776;</label>
+		</div>
+		<div id="nav-logo">
+			<?php if (!the_custom_logo()) { ?>
+				<h3 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
+			<?
+			}
+			else{ 
+				the_custom_logo();
+			} ?>
+		</div>
+		<div id="mst-navbar">
+		<input type="checkbox" id="toggle" unchecked/>
+		<div class="mst-menu-container">
+		<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'mst-primary-menu',
+						'menu_class' => 'mst-menu'
+					)
+				);
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$mst_description = get_bloginfo( 'description', 'display' );
-			if ( $mst_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $mst_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mst' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+		</div>
+				
+		</div>
+	</header>

@@ -13,18 +13,13 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'mst' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'mst' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'mst' ), 'mst', '<a href="http://portfolio.jerielbenavides.me">Jeriel Benavides</a>' );
-				?>
+			<p>Copyright &copy; 2022 - <a href="http://portfolio.jerielbenavides.me/">Jeriel Benavides</a><p>
 		</div><!-- .site-info -->
+		<div id="footer-links">
+			<p>A</p>
+			<p>A</p>
+			<p>A</p>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
