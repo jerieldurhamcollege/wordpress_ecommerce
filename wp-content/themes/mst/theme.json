@@ -27,6 +27,11 @@
                 "name": "Silver White"
                 },
                 {
+                "slug": "white",
+                "color": "#fff",
+                "name": "white"
+                },
+                {
                 "slug": "black",
                 "color": "#000000",
                 "name": "black"
