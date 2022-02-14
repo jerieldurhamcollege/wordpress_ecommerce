@@ -7,7 +7,21 @@
     font-family: Lato;
     font-size: 16px
 }
-
+body{
+    height:0; /* Removes space after footer. Not sure why it is happening. */
+}
+a:hover{
+    color:#0ac25a;
+}
+a{
+    color: #008339 !important;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+a:visited{
+    color: #008339 ;
+    font-size: 1.5rem;
+}
 /* HEADER */
 #mst-header{
     display: flex;
@@ -135,6 +149,7 @@
     background: #008339;
     color: white;
     padding: 0.1rem 10% 0.1rem 10%;
+    overflow:hidden;
 }
 #colophon div p a{
     color: white !important;
@@ -144,21 +159,15 @@
 #footer-links{
     display: flex;
     place-items: center;
+    gap: 0.5rem;
+}
+#footer-links a{
+   color: white !important;
+}
+#footer-links a i{
+   font-size: 1.5rem;
 }
 /* FOOTER END */
-
-a:hover{
-    color:#0ac25a;
-}
-a{
-    color: #008339 !important;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-a:visited{
-    color: #008339 ;
-    font-size: 1.5rem;
-}
 .post-thumbnail{
     width: 80%;
     margin-left: auto;
@@ -434,8 +443,8 @@ a:visited{
     color: #fff;
 } */
 .wp-block-social-links:not(.is-style-logos-only) a {
-    background-color: #0d66c2;
-    color: #fff;
+    background-color: #008339 ;
+    color: #fff !important;
 }
 .is-style-mst-social-links{
     margin-top: 0.5rem;
