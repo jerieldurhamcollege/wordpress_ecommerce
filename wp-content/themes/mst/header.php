@@ -30,7 +30,7 @@
 			<label id="hamburger" for="toggle">&#9776;</label>
 		</div>
 		<div id="nav-logo">
-			<?php if (!the_custom_logo()) { ?>
+			<?php if (!has_custom_logo()) { ?>
 				<h3 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
 			<?
 			}

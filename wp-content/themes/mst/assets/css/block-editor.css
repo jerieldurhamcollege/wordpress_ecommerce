@@ -134,6 +134,9 @@ a:visited{
     width: max-content;
     margin: auto;
 }
+.custom-logo-link{
+    max-width: 8rem;
+}
 .mst-menu-container{
     width: 100%;
 }
