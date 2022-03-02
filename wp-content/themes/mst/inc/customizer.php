@@ -31,6 +31,48 @@ function mst_customize_register( $wp_customize ) {
 			)
 		);
 	}
+
+	//
+	$wp_customize -> add_section('mst_social_media', array(
+		'title' => esc_html__( 'Social Media', 'mst'),
+	));
+	$wp_customize -> add_setting('mst_facebook_url', array());
+	$wp_customize -> add_control('mst_facebook_url', array(
+		'label' => 'Facebook URL',
+		'section' => 'mst_social_media',
+		'description' => 'Enter Facebook URL',
+		'type' => 'url',
+	));
+	$wp_customize -> add_section('mst_social_media', array(
+		'title' => esc_html__( 'Social Media', 'mst'),
+	));
+	$wp_customize -> add_setting('mst_twitter_url', array());
+	$wp_customize -> add_control('mst_twitter_url', array(
+		'label' => 'Twitter URL',
+		'section' => 'mst_social_media',
+		'description' => 'Enter Twitter URL',
+		'type' => 'url',
+	));
+	$wp_customize -> add_section('mst_social_media', array(
+		'title' => esc_html__( 'Social Media', 'mst'),
+	));
+	$wp_customize -> add_setting('mst_linkedIn_url', array());
+	$wp_customize -> add_control('mst_linkedIn_url', array(
+		'label' => 'LinkedIn URL',
+		'section' => 'mst_social_media',
+		'description' => 'Enter LinkedIn URL',
+		'type' => 'url',
+	));
+	$wp_customize -> add_section('mst_social_media', array(
+		'title' => esc_html__( 'Social Media', 'mst'),
+	));
+	$wp_customize -> add_setting('mst_instagram_url', array());
+	$wp_customize -> add_control('mst_instagram_url', array(
+		'label' => 'Instagram URL',
+		'section' => 'mst_social_media',
+		'description' => 'Enter Instagram URL',
+		'type' => 'url',
+	));
 }
 add_action( 'customize_register', 'mst_customize_register' );
 
