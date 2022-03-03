@@ -163,3 +163,10 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
+
+if (! function_exists('mst_social_media_menu')){
+	function mst_social_media_menu(){
+		?> <h1>TESTING SOCIAL ICONS</h1> <?php
+	}
+
+}
