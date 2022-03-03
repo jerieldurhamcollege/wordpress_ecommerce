@@ -48,7 +48,7 @@ function mst_customize_register( $wp_customize ) {
 		'title' => esc_html__( 'LinkedIn', 'mst'),
 		'panel' => 'mst_social_media',
 	));
-	$wp_customize -> add_section('mst_Instagram_media', array(
+	$wp_customize -> add_section('mst_instagram_media', array(
 		'title' => esc_html__( 'Instagram', 'mst'),
 		'panel' => 'mst_social_media',
 	));
@@ -60,6 +60,11 @@ function mst_customize_register( $wp_customize ) {
 		'description' => 'Enter Facebook URL',
 		'type' => 'url',
 	));
+	$wp_customize -> add_setting('mst_facebook_icon', array());
+	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize,'mst_facebook_icon', array(
+		'label' => 'Icon',
+		'section' => 'mst_facebook_media',
+	)));
 	$wp_customize -> add_setting('mst_twitter_url', array());
 	$wp_customize -> add_control('mst_twitter_url', array(
 		'label' => 'URL',
@@ -67,6 +72,11 @@ function mst_customize_register( $wp_customize ) {
 		'description' => 'Enter Twitter URL',
 		'type' => 'url',
 	));
+	$wp_customize -> add_setting('mst_twitter_icon', array());
+	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize,'mst_twitter_icon', array(
+		'label' => 'Icon',
+		'section' => 'mst_twitter_media',
+	)));
 	$wp_customize -> add_setting('mst_linkedIn_url', array());
 	$wp_customize -> add_control('mst_linkedIn_url', array(
 		'label' => 'URL',
@@ -74,13 +84,23 @@ function mst_customize_register( $wp_customize ) {
 		'description' => 'Enter LinkedIn URL',
 		'type' => 'url',
 	));
+	$wp_customize -> add_setting('mst_linkedIn_icon', array());
+	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize,'mst_linkedIn_icon', array(
+		'label' => 'Icon',
+		'section' => 'mst_linkedIn_media',
+	)));
 	$wp_customize -> add_setting('mst_instagram_url', array());
 	$wp_customize -> add_control('mst_instagram_url', array(
 		'label' => 'URL',
-		'section' => 'mst_social_media',
+		'section' => 'mst_instagram_media',
 		'description' => 'Enter Instagram URL',
 		'type' => 'url',
 	));
+	$wp_customize -> add_setting('mst_instagram_icon', array());
+	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize, 'mst_instagram_icon', array(
+		'label' => 'Icon',
+		'section' => 'mst_instagram_media',
+	)));
 }
 add_action( 'customize_register', 'mst_customize_register' );
 
