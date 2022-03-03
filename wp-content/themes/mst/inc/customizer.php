@@ -33,42 +33,50 @@ function mst_customize_register( $wp_customize ) {
 	}
 
 	//
-	$wp_customize -> add_section('mst_social_media', array(
-		'title' => esc_html__( 'Social Media', 'mst'),
+	$wp_customize -> add_panel('mst_social_media', array(
+		'title' => esc_html__( 'Social Media', 'mst')
 	));
+	$wp_customize -> add_section('mst_facebook_media', array(
+		'title' => esc_html__( 'Facebook', 'mst'),
+		'panel' => 'mst_social_media',
+	));
+	$wp_customize -> add_section('mst_twitter_media', array(
+		'title' => esc_html__( 'Twitter', 'mst'),
+		'panel' => 'mst_social_media',
+	));
+	$wp_customize -> add_section('mst_linkedIn_media', array(
+		'title' => esc_html__( 'LinkedIn', 'mst'),
+		'panel' => 'mst_social_media',
+	));
+	$wp_customize -> add_section('mst_Instagram_media', array(
+		'title' => esc_html__( 'Instagram', 'mst'),
+		'panel' => 'mst_social_media',
+	));
+
 	$wp_customize -> add_setting('mst_facebook_url', array());
 	$wp_customize -> add_control('mst_facebook_url', array(
-		'label' => 'Facebook URL',
-		'section' => 'mst_social_media',
+		'label' => 'URL',
+		'section' => 'mst_facebook_media',
 		'description' => 'Enter Facebook URL',
 		'type' => 'url',
 	));
-	$wp_customize -> add_section('mst_social_media', array(
-		'title' => esc_html__( 'Social Media', 'mst'),
-	));
 	$wp_customize -> add_setting('mst_twitter_url', array());
 	$wp_customize -> add_control('mst_twitter_url', array(
-		'label' => 'Twitter URL',
-		'section' => 'mst_social_media',
+		'label' => 'URL',
+		'section' => 'mst_twitter_media',
 		'description' => 'Enter Twitter URL',
 		'type' => 'url',
 	));
-	$wp_customize -> add_section('mst_social_media', array(
-		'title' => esc_html__( 'Social Media', 'mst'),
-	));
 	$wp_customize -> add_setting('mst_linkedIn_url', array());
 	$wp_customize -> add_control('mst_linkedIn_url', array(
-		'label' => 'LinkedIn URL',
-		'section' => 'mst_social_media',
+		'label' => 'URL',
+		'section' => 'mst_linkedIn_media',
 		'description' => 'Enter LinkedIn URL',
 		'type' => 'url',
 	));
-	$wp_customize -> add_section('mst_social_media', array(
-		'title' => esc_html__( 'Social Media', 'mst'),
-	));
 	$wp_customize -> add_setting('mst_instagram_url', array());
 	$wp_customize -> add_control('mst_instagram_url', array(
-		'label' => 'Instagram URL',
+		'label' => 'URL',
 		'section' => 'mst_social_media',
 		'description' => 'Enter Instagram URL',
 		'type' => 'url',
