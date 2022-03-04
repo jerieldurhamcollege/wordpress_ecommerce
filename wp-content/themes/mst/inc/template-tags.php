@@ -170,19 +170,26 @@ if (! function_exists('mst_social_media_menu')){
 		$sites = array('facebook', 'instagram', 'twitter','linkedIn');
 		foreach($sites as $socialSite){
 			$urlString = 'mst_social_menu_links_'.$socialSite.'_url';
+			$fontAwesomeTag = 'mst_social_menu_links_'.$socialSite.'_fontawesome';
 			$iconString = 'mst_social_menu_links_'.$socialSite.'_icon';
 			if (!empty(get_theme_mod($urlString))) {
 				?>
 				<a class="mst_social_menu_link" href="<?php echo esc_url(get_theme_mod($urlString));?>" aria-label="<?php echo $socialSite; ?>" >
 				<?
-				if (!empty(get_theme_mod($iconString))) {
-					echo wp_get_attachment_image(get_theme_mod($iconString), array ('30', '30'));
+				if (!empty(get_theme_mod($fontAwesomeTag))) {
+					echo get_theme_mod($fontAwesomeTag);
 				}
-				else {
-					if (!empty(get_theme_mod($urlString))) {
-						echo get_theme_mod($urlString);
+				else{
+					if (!empty(get_theme_mod($iconString))) {
+						echo wp_get_attachment_image(get_theme_mod($iconString), array ('23', '23'));
+					}
+					else {
+						if (!empty(get_theme_mod($urlString))) {
+							echo get_theme_mod($urlString);
+						}
 					}
 				}
+				
 				?> </a> <?
 			}
 
@@ -193,7 +200,6 @@ if (! function_exists('mst_social_media_menu')){
 
 		// echo var_dump(get_theme_mods());
 		// echo var_dump(get_theme_mods());
-		?> <h1>TESTING SOCIAL ICONS</h1> <?php
 	}
 
 }
