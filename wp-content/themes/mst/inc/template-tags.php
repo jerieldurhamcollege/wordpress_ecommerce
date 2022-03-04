@@ -166,6 +166,33 @@ endif;
 
 if (! function_exists('mst_social_media_menu')){
 	function mst_social_media_menu(){
+		$themeModsArray = array(get_theme_mods());
+		$sites = array('facebook', 'instagram', 'twitter','linkedIn');
+		foreach($sites as $socialSite){
+			$urlString = 'mst_social_menu_links_'.$socialSite.'_url';
+			$iconString = 'mst_social_menu_links_'.$socialSite.'_icon';
+			if (!empty(get_theme_mod($urlString))) {
+				?>
+				<a class="mst_social_menu_link" href="<?php echo esc_url(get_theme_mod($urlString));?>" aria-label="<?php echo $socialSite; ?>" >
+				<?
+				if (!empty(get_theme_mod($iconString))) {
+					echo wp_get_attachment_image(get_theme_mod($iconString), array ('30', '30'));
+				}
+				else {
+					if (!empty(get_theme_mod($urlString))) {
+						echo get_theme_mod($urlString);
+					}
+				}
+				?> </a> <?
+			}
+
+			// foreach ($themeModsArray as $themeMod){
+			// 	echo var_dump($themeMod);
+			// }
+		}
+
+		// echo var_dump(get_theme_mods());
+		// echo var_dump(get_theme_mods());
 		?> <h1>TESTING SOCIAL ICONS</h1> <?php
 	}
 

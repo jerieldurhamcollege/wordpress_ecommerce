@@ -53,53 +53,85 @@ function mst_customize_register( $wp_customize ) {
 		'panel' => 'mst_social_media',
 	));
 
-	$wp_customize -> add_setting('mst_facebook_url', array());
-	$wp_customize -> add_control('mst_facebook_url', array(
+	$wp_customize -> add_setting('mst_social_menu_links_facebook_url', array());
+	$wp_customize -> add_control('mst_social_menu_links_facebook_url', array(
 		'label' => 'URL',
 		'section' => 'mst_facebook_media',
 		'description' => 'Enter Facebook URL',
 		'type' => 'url',
 	));
-	$wp_customize -> add_setting('mst_facebook_icon', array());
-	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize,'mst_facebook_icon', array(
+	$wp_customize -> add_setting('mst_social_menu_links_facebook_fontawesome', array());
+	$wp_customize -> add_control('mst_social_menu_links_facebook_fontawesome', array(
+		'label' => 'Fontawesome Icon',
+		'section' => 'mst_facebook_media',
+		'description' => 'Enter Favicon Icon Tag here',
+		'type' => 'url',
+	));
+	$wp_customize -> add_setting('mst_social_menu_links_facebook_icon', array());
+	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize,'mst_social_menu_links_facebook_icon', array(
 		'label' => 'Icon',
 		'section' => 'mst_facebook_media',
+		'description' => 'Select/Upload Icon (leave Favicon empty)',
 	)));
-	$wp_customize -> add_setting('mst_twitter_url', array());
-	$wp_customize -> add_control('mst_twitter_url', array(
+	$wp_customize -> add_setting('mst_social_menu_links_twitter_url', array());
+	$wp_customize -> add_control('mst_social_menu_links_twitter_url', array(
 		'label' => 'URL',
 		'section' => 'mst_twitter_media',
 		'description' => 'Enter Twitter URL',
 		'type' => 'url',
 	));
-	$wp_customize -> add_setting('mst_twitter_icon', array());
-	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize,'mst_twitter_icon', array(
+	$wp_customize -> add_setting('mst_social_menu_links_twitter_fontawesome', array());
+	$wp_customize -> add_control('mst_social_menu_links_twitter_fontawesome', array(
+		'label' => 'Fontawesome Icon',
+		'section' => 'mst_twitter_media',
+		'description' => 'Enter Favicon Icon Tag here',
+		'type' => 'url',
+	));
+	$wp_customize -> add_setting('mst_social_menu_links_twitter_icon', array());
+	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize,'mst_social_menu_links_twitter_icon', array(
 		'label' => 'Icon',
 		'section' => 'mst_twitter_media',
+		'description' => 'Select/Upload Icon (leave Favicon empty)',
 	)));
-	$wp_customize -> add_setting('mst_linkedIn_url', array());
-	$wp_customize -> add_control('mst_linkedIn_url', array(
+	$wp_customize -> add_setting('mst_social_menu_links_linkedIn_url', array());
+	$wp_customize -> add_control('mst_social_menu_links_linkedIn_url', array(
 		'label' => 'URL',
 		'section' => 'mst_linkedIn_media',
 		'description' => 'Enter LinkedIn URL',
 		'type' => 'url',
 	));
-	$wp_customize -> add_setting('mst_linkedIn_icon', array());
-	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize,'mst_linkedIn_icon', array(
+	$wp_customize -> add_setting('mst_social_menu_links_linkedIn_fontawesome', array());
+	$wp_customize -> add_control('mst_social_menu_links_linkedIn_fontawesome', array(
+		'label' => 'Fontawesome Icon',
+		'section' => 'mst_linkedIn_media',
+		'description' => 'Enter Favicon Icon Tag here',
+		'type' => 'url',
+	));
+	$wp_customize -> add_setting('mst_social_menu_links_linkedIn_icon', array());
+	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize,'mst_social_menu_links_linkedIn_icon', array(
 		'label' => 'Icon',
 		'section' => 'mst_linkedIn_media',
+		'description' => 'Select/Upload Icon (leave Favicon empty)',
 	)));
-	$wp_customize -> add_setting('mst_instagram_url', array());
-	$wp_customize -> add_control('mst_instagram_url', array(
+	$wp_customize -> add_setting('mst_social_menu_links_instagram_url', array());
+	$wp_customize -> add_control('mst_social_menu_links_instagram_url', array(
 		'label' => 'URL',
 		'section' => 'mst_instagram_media',
 		'description' => 'Enter Instagram URL',
 		'type' => 'url',
 	));
-	$wp_customize -> add_setting('mst_instagram_icon', array());
-	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize, 'mst_instagram_icon', array(
+	$wp_customize -> add_setting('mst_social_menu_links_instagram_fontawesome', array());
+	$wp_customize -> add_control('mst_social_menu_links_instagram_fontawesome', array(
+		'label' => 'Fontawesome Icon',
+		'section' => 'mst_instagram_media',
+		'description' => 'Enter Favicon Icon Tag here',
+		'type' => 'url',
+	));
+	$wp_customize -> add_setting('mst_social_menu_links_instagram_icon', array());
+	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize, 'mst_social_menu_links_instagram_icon', array(
 		'label' => 'Icon',
 		'section' => 'mst_instagram_media',
+		'description' => 'Select/Upload Icon (leave Favicon empty)',
 	)));
 }
 add_action( 'customize_register', 'mst_customize_register' );
