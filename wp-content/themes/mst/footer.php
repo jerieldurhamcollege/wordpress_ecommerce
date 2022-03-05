@@ -12,8 +12,18 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<p>Copyright &copy; 2022 - <a href="http://portfolio.jerielbenavides.me/">Jeriel Benavides</a><p>
+		<div class="site-info"> <?
+		$copyString = 'mst_footer_copyright_text';
+		if (!empty(get_theme_mod($copyString))) {
+				?>
+				<p>
+				<?
+				if (!empty(get_theme_mod($copyString))) {
+					echo get_theme_mod($copyString);
+				}
+				?> </p> <?
+			}
+			?>
 		</div><!-- .site-info -->
 		<div id="footer-links">
 			<?php mst_social_media_menu() ?>

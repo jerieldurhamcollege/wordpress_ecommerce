@@ -36,6 +36,19 @@ function mst_customize_register( $wp_customize ) {
 	$wp_customize -> add_panel('mst_social_media', array(
 		'title' => esc_html__( 'Social Media', 'mst')
 	));
+	$wp_customize -> add_panel('mst_footer_settings', array(
+		'title' => esc_html__( 'Footer', 'mst')
+	));
+	$wp_customize -> add_section('mst_footer_copyright', array(
+		'title' => esc_html__( 'Footer Copyright', 'mst'),
+		'panel' => 'mst_footer_settings',
+	));
+	$wp_customize -> add_setting('mst_footer_copyright_text', array());
+	$wp_customize -> add_control('mst_footer_copyright_text', array(
+		'label' => 'Copytight Text',
+		'section' => 'mst_footer_copyright',
+		'description' => 'Enter Copyright Text',
+	));
 	$wp_customize -> add_section('mst_facebook_media', array(
 		'title' => esc_html__( 'Facebook', 'mst'),
 		'panel' => 'mst_social_media',
