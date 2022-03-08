@@ -1,0 +1,91 @@
+ul.products li{
+    list-style: none;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product .entry-summary{
+    padding: 5%;
+    width: auto;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+.product .entry-summary form.cart{
+    display: flex;
+    gap: 5px;
+}
+.product .entry-summary .product_title{
+    font-size: 2rem;
+    margin: 0;
+}
+.product .entry-summary form.cart button{
+    color: white;
+    padding: 0.5rem;
+    background: #008339;
+}
+.product .entry-summary form.cart .quantity input{
+    padding: 0.5rem;
+}
+.woocommerce-Price-amount bdi{
+    color: darkgreen;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+}
+.woocommerce-tabs{
+    flex-basis: 100%;
+    display: flex;
+    min-height: 10rem;
+    gap: 1rem;
+    margin: 0 10% 0 10%;
+    margin-bottom: 3rem;
+    background: #edf3f3;
+}
+.woocommerce-tabs .tabs{
+    min-width: 30%;
+    list-style: none;
+    min-width: 30%;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid darkgreen;
+    margin: 0;
+}
+.woocommerce-Tabs-panel{
+    width: 100%;
+    text-align: left;
+    min-width: 30%;
+}
+.woocommerce-Tabs-panel >*{
+    width: 100%;
+    margin: 0;
+}
+
+.woocommerce-Tabs-panel table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .woocommerce-Tabs-panel table td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .woocommerce-Tabs-panel table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .woocommerce-Tabs-panel table tr:hover {background-color: #ddd;}
+  
+  .woocommerce-Tabs-panel table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7fd1b3;
+    color: black;
+  }
+  .woocommerce-breadcrumb, .woocommerce-message{
+    padding: 0 10% 0 10%;
+    margin-top: 10px;
+  }

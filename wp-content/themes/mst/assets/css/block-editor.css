@@ -107,7 +107,7 @@ a:visited{
     font-size: 1.5rem;
 }
 /* HEADER */
-.entry-header, .page-header{
+.entry-header, .page-header, .entry-footer, .post-navigation{
     padding: 1rem 10% 0rem 10%;
 }
 #mst-header{
@@ -262,7 +262,7 @@ a:visited{
 }
 /* FOOTER END */
 .post-thumbnail{
-    width: 80%;
+    /* width: 80%; */
     margin-left: auto;
     margin-right: auto;
 }
