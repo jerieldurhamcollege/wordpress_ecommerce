@@ -125,6 +125,12 @@ function mst_widgets_init() {
 }
 add_action( 'widgets_init', 'mst_widgets_init' );
 
+//Woocommerce theme support: https://woocommerce.com/document/woocommerce-theme-developer-handbook/
+function mst_add_woocommerce_support() {
+    add_theme_support( 'woocommerce' );
+}
+
+add_action( 'after_setup_theme', 'mst_add_woocommerce_support' );
 /**
  * Enqueue scripts and styles.
  */
@@ -135,6 +141,7 @@ function mst_scripts() {
 	// wp_enqueue_script( 'bootstrap-script', get_template_directory_uri().'/assets/js/vendor/bootstrap.bundle.min.js', false, false, true );
 
 	wp_enqueue_style( 'my-mst-style', get_template_directory_uri().'/assets/css/styles.css');
+	wp_enqueue_style( 'my-woo-style', get_template_directory_uri().'/assets/css/custom_woocommerce.css');
 	// wp_enqueue_style( 'foundation-style', get_template_directory_uri().'/assets/css/vendor/foundation.min.css');
 	// wp_enqueue_script( 'what-input-script', get_template_directory_uri().'/assets/js/vendor/what-input.js', array('jquery'), false, true );
 	// wp_enqueue_script( 'foundation-script', get_template_directory_uri().'/assets/js/vendor/foundation.min.js', array('jquery','what-input-script'),  false, true );
