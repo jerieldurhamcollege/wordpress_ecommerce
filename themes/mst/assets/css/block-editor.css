@@ -12,7 +12,9 @@
 html {
 	box-sizing: border-box;
 }
-
+#primary{
+    padding: 0 10% 0 10%;
+}
 embed, iframe, object {
 	max-width: 100%;
 }

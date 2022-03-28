@@ -89,10 +89,6 @@ ul.products li{
     background-color: #7fd1b3;
     color: black;
   }
-  .woocommerce-breadcrumb, .woocommerce-message{
-    padding: 0 10% 0 10%;
-    margin-top: 10px;
-  }
 .woocommerce-cart-form{
     overflow-x:auto;
 }
@@ -132,8 +128,7 @@ ul.products li{
     background-color: #7fd1b3;
     color: black;
   }
-  .woocommerce-breadcrumb, .woocommerce-message{
-    padding: 0 10% 0 10%;
+.woocommerce-breadcrumb, .woocommerce-message{
     margin-top: 10px;
 }
 .shop_table {
@@ -184,5 +179,6 @@ ul.products li{
   }
   .products{
       display: flex;
-      padding: 5px 10% 5px 10% ;
+      padding: 5px 0% 5px 0%;
+      flex-wrap: wrap;
   }
