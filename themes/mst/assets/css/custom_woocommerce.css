@@ -45,9 +45,9 @@ ul.products li{
     display: flex;
     min-height: 10rem;
     gap: 1rem;
-    margin: 0 10% 0 10%;
     margin-bottom: 3rem;
     background: #edf3f3;
+    padding: 5px;
 }
 .woocommerce-tabs .tabs{
     min-width: 30%;
