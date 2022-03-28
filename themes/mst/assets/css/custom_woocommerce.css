@@ -182,3 +182,7 @@ ul.products li{
   .products .product{
       flex-direction: column;
   }
+  .products{
+      display: flex;
+      padding: 5px 10% 5px 10% ;
+  }
