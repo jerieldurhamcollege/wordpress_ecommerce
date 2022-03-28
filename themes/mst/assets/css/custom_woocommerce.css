@@ -179,6 +179,6 @@ ul.products li{
   }
   .products{
       display: flex;
-      padding: 5px 0% 5px 0%;
+      gap: 1rem;
       flex-wrap: wrap;
   }
