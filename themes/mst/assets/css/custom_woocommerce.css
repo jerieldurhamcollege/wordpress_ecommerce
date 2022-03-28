@@ -7,9 +7,9 @@ ul.products li{
 }
 
 .product .entry-summary{
-    padding: 5%;
     width: auto;
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     gap: 5px
