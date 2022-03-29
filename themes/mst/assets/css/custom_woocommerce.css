@@ -37,6 +37,10 @@ ul.products li{
   width: fit-content;
   font-size: 1rem;
 }
+/* WooCommerce product title */
+.woocommerce-loop-product__title{
+  margin: 0;
+}
 .product .entry-summary form.cart .quantity input{
     padding: 0.5rem;
 }
