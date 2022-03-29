@@ -51,7 +51,7 @@ ul.products li{
 .woocommerce-Price-amount bdi{
     color: darkgreen;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0;
 }
 /* The woocommerce tabs */
@@ -104,8 +104,16 @@ ul.products li{
     background-color: #7fd1b3;
     color: black;
   }
+  /* Woocommerce cart */
 .woocommerce-cart-form{
     overflow-x:auto;
+}
+.woocommerce-cart-form .product-thumbnail{
+  max-width: 150px;
+  max-height: 150px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 .woocommerce-cart-form__contents {
     border-collapse: collapse;
@@ -146,6 +154,9 @@ ul.products li{
 .woocommerce-breadcrumb, .woocommerce-message{
     margin-top: 10px;
 }
+.wc-tabs li a{
+  font-size: 1rem;
+}
 .shop_table {
     overflow-x: auto;
     border-collapse: collapse;
@@ -173,6 +184,16 @@ ul.products li{
     text-align: left;
     background-color: #7fd1b3;
     color: black;
+  }
+  /* Cart table */
+  .shop_table thead tr th{
+    height: 50px !important;
+    border: 1px solid grey;
+    padding: 5px;
+  }
+  .shop_table tbody tr th{
+    border: 1px solid grey;
+    padding: 5px;
   }
 
   .woocommerce-MyAccount-navigation ul{
