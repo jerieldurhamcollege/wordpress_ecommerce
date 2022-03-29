@@ -6,12 +6,12 @@
  * @package ModernStoreTheme
  */
 ?>
-
+<!-- Custom template for auction post types. -->
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header post-header">
 		<div class="post-title">
 		<?php
-		
+		//Conditional. Checks whether this is archive or not.
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :

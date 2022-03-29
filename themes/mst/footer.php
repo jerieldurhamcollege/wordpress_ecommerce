@@ -10,12 +10,14 @@
  */
 
 ?>
+	<!-- Section for custom auction post type. -->
 	<section>
 		<div class="featured_auctions">
 			<h2>Upcoming Auctions</h2>
 		</div>
 		<div class="featured_auctions">
 		<?php
+			// Query gets most recent posts, as long as the id of the current post is not that one.
 			$auction_args = array(
 				'post_type' => array('auction'),
 				'post_status' => 'publish',
@@ -23,13 +25,15 @@
 				'post__not_in'   => array(get_the_ID())
 			);
 			$auction_query = new WP_Query( $auction_args);
-
+			//Checks if posts are availanle.
 			if ( $auction_query->have_posts() ) {
+				//Checks all posts, if any.
 				while ( $auction_query-> have_posts() ) {
 					$auction_query->the_post();
 					?>
 					<a class="footer_auction_link" href="<?php the_permalink(); ?>">
 						<article class='featured_auction'>
+							<!-- Print the title and post excerpt. Do not require echo -->
 							<? the_post_thumbnail(); ?>
 							<h2><? the_title(); ?></h2>
 							<p><? the_excerpt(); ?></p>
@@ -44,6 +48,7 @@
 	<footer id="colophon" class="site-footer">
 		<div class="site-info"> <?
 		$copyString = 'mst_footer_copyright_text';
+		//Check for copyright data from customizer.
 		if (!empty(get_theme_mod($copyString))) {
 				?>
 				<p>
