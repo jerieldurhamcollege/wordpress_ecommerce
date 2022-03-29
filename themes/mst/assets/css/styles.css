@@ -1,10 +1,11 @@
+This file contains custom styles.
 #recent-posts{
     padding: 5px 10% 5px 10% ;
 }
 .post-header{
     position: relative;
 }
-
+/* Custom class at recent-posts.php */
 .postCard{
     display: flex;
     margin: auto;
@@ -51,6 +52,7 @@
   .post-social-links a i{
     font-size: 2.4rem;
   }
+  /* Footer auction widget */
   .featured_auction{
     max-width: 300px;
   }

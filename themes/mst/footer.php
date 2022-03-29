@@ -10,13 +10,17 @@
  */
 
 ?>
-	<section class="featured_auctions">
-	<?php
-		 	$auction_args = array(
-				 'post_type' => array('auction'),
-				 'post_status' => 'publish',
-				 'post_per_page' => 3,
-				 'post__not_in'   => array(get_the_ID())
+	<section>
+		<div class="featured_auctions">
+			<h2>Upcoming Auctions</h2>
+		</div>
+		<div class="featured_auctions">
+		<?php
+			$auction_args = array(
+				'post_type' => array('auction'),
+				'post_status' => 'publish',
+				'post_per_page' => 3,
+				'post__not_in'   => array(get_the_ID())
 			);
 			$auction_query = new WP_Query( $auction_args);
 
@@ -35,6 +39,7 @@
 				}
 			}
 		?>
+		</div>
 	</section>
 	<footer id="colophon" class="site-footer">
 		<div class="site-info"> <?
