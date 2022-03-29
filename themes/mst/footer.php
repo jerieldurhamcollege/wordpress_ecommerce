@@ -10,22 +10,20 @@
  */
 
 ?>
-
-	<footer id="colophon" class="site-footer">
-
-
-		<?php
+	<section class="featured_auctions">
+	<?php
 		 	$auction_args = array(
 				 'post_type' => array('auction'),
 				 'post_status' => 'publish',
 				 'post_per_page' => 3,
-				 'port__not_in'   => array(get_the_ID())
+				 'post__not_in'   => array(get_the_ID())
 			);
 			$auction_query = new WP_Query( $auction_args);
 
 			if ( $auction_query->have_posts() ) {
 				while ( $auction_query-> have_posts() ) {
-					$auction_query->have_post();
+					$auction_query->the_post();
+					the_title();
 				}
 				// the_title();
 				// the_excerpt();
@@ -33,7 +31,8 @@
 				wp_reset_postdata();
 			}
 		?>
-
+	</section>
+	<footer id="colophon" class="site-footer">
 		<div class="site-info"> <?
 		$copyString = 'mst_footer_copyright_text';
 		if (!empty(get_theme_mod($copyString))) {
