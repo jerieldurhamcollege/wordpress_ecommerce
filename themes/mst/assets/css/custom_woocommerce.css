@@ -79,7 +79,7 @@ ul.products li{
     border: 1px solid #ddd;
     padding: 8px;
   }
-  
+  /* WooCommerce table styles */
   .woocommerce-Tabs-panel table tr:nth-child(even){background-color: #f2f2f2;}
   
   .woocommerce-Tabs-panel table tr:hover {background-color: #ddd;}

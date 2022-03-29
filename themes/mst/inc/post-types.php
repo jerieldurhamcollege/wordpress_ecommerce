@@ -6,6 +6,7 @@
  *
  * @package ModernStoreTheme
  */
+//Register custom post type function. Contains array with options and values.
 function register_auction_post_type() {
     $labels = array(
         'name'                  => _x( 'Auctions', 'Post type general name', 'auction' ),
@@ -54,4 +55,5 @@ function register_auction_post_type() {
     
     register_post_type( 'Auction', $args );
 }
+//Add 'action'. Parameter is name of register function.
 add_action( 'init', 'register_auction_post_type' );
