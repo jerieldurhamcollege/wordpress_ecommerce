@@ -23,10 +23,19 @@ ul.products li{
     font-size: 2rem;
     margin: 0;
 }
+/* Add to cart button */
 .product .entry-summary form.cart button{
     color: white;
     padding: 0.5rem;
     background: #008339;
+}
+/* Add to cart button on product grid */
+.add_to_cart_button{
+  color: white;
+  padding: 0.5rem;
+  background: #008339;
+  width: fit-content;
+  font-size: 1rem;
 }
 .product .entry-summary form.cart .quantity input{
     padding: 0.5rem;
@@ -185,3 +194,8 @@ ul.products li{
       flex-wrap: wrap;
       padding: 0;
   }
+  /* Woocommerce image product page */
+.woocommerce-product-gallery__wrapper{
+  max-width: 350px;
+  margin-right: 20px;
+}
