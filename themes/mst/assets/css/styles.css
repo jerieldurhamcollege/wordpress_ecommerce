@@ -12,12 +12,12 @@
     gap: 1rem;
     margin-top: 1rem;
     margin-bottom: 5px;
-    flex-wrap: wrap;
 }
 .postCard img{
     order: 0;
     max-width: 20rem;
     object-fit: cover;
+    width: 100%
 }
 .postTitle{
     margin: 0;
@@ -71,3 +71,9 @@
  .footer_auction_link article  p{
       color: black;
   }
+
+@media only screen and (max-width: 700px)  {
+    .postCard{
+      flex-wrap: wrap;
+  }
+}

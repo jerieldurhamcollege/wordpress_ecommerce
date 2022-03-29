@@ -37,6 +37,13 @@ ul.products li{
   width: fit-content;
   font-size: 1rem;
 }
+.wc-proceed-to-checkout a{
+  color: white;
+  padding: 0.5rem;
+  background: #008339;
+  width: fit-content;
+  font-size: 1rem;
+}
 /* WooCommerce product title */
 .woocommerce-loop-product__title{
   margin: 0;
@@ -151,6 +158,20 @@ ul.products li{
     background-color: #7fd1b3;
     color: black;
   }
+
+/* Cart form */
+.form-row{
+  display:flex;
+  gap: 1rem;
+}
+/* Text area */
+#order_comments{
+  width: 200px;
+}
+/* We do not need flex here */
+.place-order{
+  display:block !important;
+}
 .woocommerce-breadcrumb, .woocommerce-message{
     margin-top: 10px;
 }
