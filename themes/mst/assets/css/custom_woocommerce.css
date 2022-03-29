@@ -23,10 +23,30 @@ ul.products li{
     font-size: 2rem;
     margin: 0;
 }
+/* Add to cart button */
 .product .entry-summary form.cart button{
     color: white;
     padding: 0.5rem;
     background: #008339;
+}
+/* Add to cart button on product grid */
+.add_to_cart_button{
+  color: white;
+  padding: 0.5rem;
+  background: #008339;
+  width: fit-content;
+  font-size: 1rem;
+}
+.wc-proceed-to-checkout a{
+  color: white;
+  padding: 0.5rem;
+  background: #008339;
+  width: fit-content;
+  font-size: 1rem;
+}
+/* WooCommerce product title */
+.woocommerce-loop-product__title{
+  margin: 0;
 }
 .product .entry-summary form.cart .quantity input{
     padding: 0.5rem;
@@ -38,7 +58,7 @@ ul.products li{
 .woocommerce-Price-amount bdi{
     color: darkgreen;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0;
 }
 /* The woocommerce tabs */
@@ -91,8 +111,16 @@ ul.products li{
     background-color: #7fd1b3;
     color: black;
   }
+  /* Woocommerce cart */
 .woocommerce-cart-form{
     overflow-x:auto;
+}
+.woocommerce-cart-form .product-thumbnail{
+  max-width: 150px;
+  max-height: 150px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 .woocommerce-cart-form__contents {
     border-collapse: collapse;
@@ -130,8 +158,25 @@ ul.products li{
     background-color: #7fd1b3;
     color: black;
   }
+
+/* Cart form */
+.form-row{
+  display:flex;
+  gap: 1rem;
+}
+/* Text area */
+#order_comments{
+  width: 200px;
+}
+/* We do not need flex here */
+.place-order{
+  display:block !important;
+}
 .woocommerce-breadcrumb, .woocommerce-message{
     margin-top: 10px;
+}
+.wc-tabs li a{
+  font-size: 1rem;
 }
 .shop_table {
     overflow-x: auto;
@@ -161,6 +206,16 @@ ul.products li{
     background-color: #7fd1b3;
     color: black;
   }
+  /* Cart table */
+  .shop_table thead tr th{
+    height: 50px !important;
+    border: 1px solid grey;
+    padding: 5px;
+  }
+  .shop_table tbody tr th{
+    border: 1px solid grey;
+    padding: 5px;
+  }
 
   .woocommerce-MyAccount-navigation ul{
       list-style: none;
@@ -185,3 +240,8 @@ ul.products li{
       flex-wrap: wrap;
       padding: 0;
   }
+  /* Woocommerce image product page */
+.woocommerce-product-gallery__wrapper{
+  max-width: 350px;
+  margin-right: 20px;
+}

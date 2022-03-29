@@ -1,4 +1,4 @@
-This file contains custom styles.
+/* This file contains custom styles. */
 #recent-posts{
     padding: 5px 10% 5px 10% ;
 }
@@ -16,6 +16,8 @@ This file contains custom styles.
 .postCard img{
     order: 0;
     max-width: 20rem;
+    object-fit: cover;
+    width: 100%
 }
 .postTitle{
     margin: 0;
@@ -69,3 +71,9 @@ This file contains custom styles.
  .footer_auction_link article  p{
       color: black;
   }
+
+@media only screen and (max-width: 700px)  {
+    .postCard{
+      flex-wrap: wrap;
+  }
+}
