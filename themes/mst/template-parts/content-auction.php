@@ -5,11 +5,6 @@
  *
  * @package ModernStoreTheme
  */
-    if (!is_singular('auction')){
-        echo 'Archive page for auction';
-    }else{
-        echo 'Content page for auction';
-    }
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

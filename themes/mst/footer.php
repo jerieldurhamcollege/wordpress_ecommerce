@@ -23,12 +23,16 @@
 			if ( $auction_query->have_posts() ) {
 				while ( $auction_query-> have_posts() ) {
 					$auction_query->the_post();
-					the_title();
+					?>
+					<a href="<?php the_permalink(); ?>">
+						<article class='featured_auction'>
+							<? the_post_thumbnail(); ?>
+							<h2><? the_title(); ?></h2>
+							<p><? the_excerpt(); ?></p>
+						</article>
+					</a> 
+					<?
 				}
-				// the_title();
-				// the_excerpt();
-				// the_post_thumbnail();
-				wp_reset_postdata();
 			}
 		?>
 	</section>

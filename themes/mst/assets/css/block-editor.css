@@ -109,9 +109,7 @@ a:visited{
     font-size: 1.5rem;
 }
 /* HEADER */
-.entry-header, .page-header, .entry-footer, .post-navigation{
-    padding: 1rem 10% 0rem 10%;
-}
+
 #mst-header{
     display: flex;
     background: #008339;
@@ -269,7 +267,6 @@ a:visited{
     margin-right: auto;
 }
 .entry-content > *{
-    width: 80%;
     margin-left: auto ;
     margin-right: auto ;
 }

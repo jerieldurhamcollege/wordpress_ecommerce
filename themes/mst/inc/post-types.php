@@ -6,7 +6,7 @@
  *
  * @package ModernStoreTheme
  */
-function wpdocs_kantbtrue_init() {
+function register_auction_post_type() {
     $labels = array(
         'name'                  => _x( 'Auctions', 'Post type general name', 'auction' ),
         'singular_name'         => _x( 'Auction', 'Post type singular name', 'auction' ),
@@ -51,7 +51,7 @@ function wpdocs_kantbtrue_init() {
         'taxonomies'         => array( 'category', 'post_tag' ),
         'show_in_rest'       => true
     );
-      
+    
     register_post_type( 'Auction', $args );
 }
-add_action( 'init', 'wpdocs_kantbtrue_init' );
+add_action( 'init', 'register_auction_post_type' );
