@@ -54,9 +54,16 @@
   .featured_auction{
     max-width: 300px;
   }
+  .featured_auction img{
+    height: 300px;
+    object-fit: cover;
+  }
   .featured_auctions{
     padding: 10px 10% 0rem 10%;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+  }
+ .footer_auction_link article  p{
+      color: black;
   }

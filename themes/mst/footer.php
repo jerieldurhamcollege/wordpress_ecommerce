@@ -24,7 +24,7 @@
 				while ( $auction_query-> have_posts() ) {
 					$auction_query->the_post();
 					?>
-					<a href="<?php the_permalink(); ?>">
+					<a class="footer_auction_link" href="<?php the_permalink(); ?>">
 						<article class='featured_auction'>
 							<? the_post_thumbnail(); ?>
 							<h2><? the_title(); ?></h2>
