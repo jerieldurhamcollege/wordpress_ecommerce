@@ -1,4 +1,4 @@
-This file contains custom styles.
+/* This file contains custom styles. */
 #recent-posts{
     padding: 5px 10% 5px 10% ;
 }
@@ -12,10 +12,12 @@ This file contains custom styles.
     gap: 1rem;
     margin-top: 1rem;
     margin-bottom: 5px;
+    flex-wrap: wrap;
 }
 .postCard img{
     order: 0;
     max-width: 20rem;
+    object-fit: cover;
 }
 .postTitle{
     margin: 0;

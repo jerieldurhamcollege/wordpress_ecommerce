@@ -18,7 +18,7 @@ get_header();
 	<main id="recent-posts" class="site-main">
 		<h1>Popular Posts</h1> <?
 		get_template_part( 'template-parts/recent-posts' ); 
-		get_footer();
 		?>
 	</main>
+	<? 		get_footer(); ?>
 <?
