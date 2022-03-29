@@ -163,19 +163,24 @@ if ( ! function_exists( 'wp_body_open' ) ) :
 		do_action( 'wp_body_open' );
 	}
 endif;
-
+//Social Icon function.
 if (! function_exists('mst_social_media_menu')){
 	function mst_social_media_menu(){
+		//Gets all theme mods.
 		$themeModsArray = array(get_theme_mods());
+		//This array will be used to check for all social sites on array.
 		$sites = array('facebook', 'instagram', 'twitter','linkedIn');
 		foreach($sites as $socialSite){
+			//Concatenation to build string containg name of theme_mod.
 			$urlString = 'mst_social_menu_links_'.$socialSite.'_url';
 			$fontAwesomeTag = 'mst_social_menu_links_'.$socialSite.'_fontawesome';
 			$iconString = 'mst_social_menu_links_'.$socialSite.'_icon';
+			//Conditional statement to check if url was set up.
 			if (!empty(get_theme_mod($urlString))) {
 				?>
 				<a class="mst_social_menu_link" href="<?php echo esc_url(get_theme_mod($urlString));?>" aria-label="<?php echo $socialSite; ?>" >
 				<?
+				//Conditional statement to choose fontawesome, or go for the default.
 				if (!empty(get_theme_mod($fontAwesomeTag))) {
 					echo get_theme_mod($fontAwesomeTag);
 				}
@@ -192,14 +197,7 @@ if (! function_exists('mst_social_media_menu')){
 				
 				?> </a> <?
 			}
-
-			// foreach ($themeModsArray as $themeMod){
-			// 	echo var_dump($themeMod);
-			// }
 		}
-
-		// echo var_dump(get_theme_mods());
-		// echo var_dump(get_theme_mods());
 	}
 
 }

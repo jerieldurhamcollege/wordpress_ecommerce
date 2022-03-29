@@ -1,3 +1,4 @@
+/* This file contains all styles for default Wordpress blocks */
 @font-face {
     font-family: Lato;  
     src: url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700;1,900&display=swap);  
@@ -12,7 +13,9 @@
 html {
 	box-sizing: border-box;
 }
-
+#primary{
+    padding: 0 10% 0 10%;
+}
 embed, iframe, object {
 	max-width: 100%;
 }
@@ -107,16 +110,14 @@ a:visited{
     font-size: 1.5rem;
 }
 /* HEADER */
-.entry-header, .page-header, .entry-footer, .post-navigation{
-    padding: 1rem 10% 0rem 10%;
-}
+
 #mst-header{
     display: flex;
     background: #008339;
     width: 100%;
     margin: auto;
     flex-wrap: wrap;
-    padding: 0.1rem 10% 0.1rem 10%;
+
 }
 #mst-header .nav-logo{
     max-width: 35%;
@@ -267,7 +268,6 @@ a:visited{
     margin-right: auto;
 }
 .entry-content > *{
-    width: 80%;
     margin-left: auto ;
     margin-right: auto ;
 }

@@ -32,10 +32,11 @@ function mst_customize_register( $wp_customize ) {
 		);
 	}
 
-	//
+	//Add panel for social media settings on customizer.
 	$wp_customize -> add_panel('mst_social_media', array(
 		'title' => esc_html__( 'Social Media', 'mst')
 	));
+	//Add footer options on customizer.
 	$wp_customize -> add_panel('mst_footer_settings', array(
 		'title' => esc_html__( 'Footer', 'mst')
 	));
@@ -49,10 +50,12 @@ function mst_customize_register( $wp_customize ) {
 		'section' => 'mst_footer_copyright',
 		'description' => 'Enter Copyright Text',
 	));
+	//Add facebook url on customizer under Social Media
 	$wp_customize -> add_section('mst_facebook_media', array(
 		'title' => esc_html__( 'Facebook', 'mst'),
 		'panel' => 'mst_social_media',
 	));
+	//Add twitter url on customizer under Social Media
 	$wp_customize -> add_section('mst_twitter_media', array(
 		'title' => esc_html__( 'Twitter', 'mst'),
 		'panel' => 'mst_social_media',
@@ -65,7 +68,7 @@ function mst_customize_register( $wp_customize ) {
 		'title' => esc_html__( 'Instagram', 'mst'),
 		'panel' => 'mst_social_media',
 	));
-
+	//Add custom field for facebook url on customizer (social media -> facebook).
 	$wp_customize -> add_setting('mst_social_menu_links_facebook_url', array());
 	$wp_customize -> add_control('mst_social_menu_links_facebook_url', array(
 		'label' => 'URL',
@@ -73,6 +76,7 @@ function mst_customize_register( $wp_customize ) {
 		'description' => 'Enter Facebook URL',
 		'type' => 'url',
 	));
+	//Add custom fontawesome option field for facebook on customizer (social media -> facebook).
 	$wp_customize -> add_setting('mst_social_menu_links_facebook_fontawesome', array());
 	$wp_customize -> add_control('mst_social_menu_links_facebook_fontawesome', array(
 		'label' => 'Fontawesome Icon',
@@ -80,12 +84,14 @@ function mst_customize_register( $wp_customize ) {
 		'description' => 'Enter Favicon Icon Tag here',
 		'type' => 'url',
 	));
+	//Add image based icon for facebook on customizer (social media -> facebook).
 	$wp_customize -> add_setting('mst_social_menu_links_facebook_icon', array());
 	$wp_customize -> add_control( new WP_Customize_Media_Control($wp_customize,'mst_social_menu_links_facebook_icon', array(
 		'label' => 'Icon',
 		'section' => 'mst_facebook_media',
 		'description' => 'Select/Upload Icon (leave Favicon empty)',
 	)));
+	//Same as FB.
 	$wp_customize -> add_setting('mst_social_menu_links_twitter_url', array());
 	$wp_customize -> add_control('mst_social_menu_links_twitter_url', array(
 		'label' => 'URL',
@@ -147,6 +153,7 @@ function mst_customize_register( $wp_customize ) {
 		'description' => 'Select/Upload Icon (leave Favicon empty)',
 	)));
 }
+//Add action...
 add_action( 'customize_register', 'mst_customize_register' );
 
 /**

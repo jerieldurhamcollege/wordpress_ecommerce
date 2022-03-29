@@ -1,3 +1,4 @@
+/* This file contains custom styles for woocommerce elements */
 ul.products li{
     list-style: none;
 }
@@ -7,9 +8,9 @@ ul.products li{
 }
 
 .product .entry-summary{
-    padding: 5%;
     width: auto;
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column;
     gap: 5px
@@ -30,20 +31,25 @@ ul.products li{
 .product .entry-summary form.cart .quantity input{
     padding: 0.5rem;
 }
+/* .woocommerce{
+    display: flex;
+    gap: 1rem
+} */
 .woocommerce-Price-amount bdi{
     color: darkgreen;
     font-weight: bold;
     font-size: 2rem;
     margin: 0;
 }
+/* The woocommerce tabs */
 .woocommerce-tabs{
     flex-basis: 100%;
     display: flex;
     min-height: 10rem;
     gap: 1rem;
-    margin: 0 10% 0 10%;
     margin-bottom: 3rem;
     background: #edf3f3;
+    padding: 5px;
 }
 .woocommerce-tabs .tabs{
     min-width: 30%;
@@ -73,7 +79,7 @@ ul.products li{
     border: 1px solid #ddd;
     padding: 8px;
   }
-  
+  /* WooCommerce table styles */
   .woocommerce-Tabs-panel table tr:nth-child(even){background-color: #f2f2f2;}
   
   .woocommerce-Tabs-panel table tr:hover {background-color: #ddd;}
@@ -85,7 +91,97 @@ ul.products li{
     background-color: #7fd1b3;
     color: black;
   }
-  .woocommerce-breadcrumb, .woocommerce-message{
-    padding: 0 10% 0 10%;
+.woocommerce-cart-form{
+    overflow-x:auto;
+}
+.woocommerce-cart-form__contents {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .woocommerce-cart-form__contents td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .woocommerce-cart-form__contents tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .woocommerce-cart-form__contents tr:hover {background-color: #ddd;}
+  .woocommerce-cart-form__contents tr.actions div{
+    color: white;
+    padding: 0.5rem;
+    background: #008339;
+    }
+  .coupon .button{
+    color: white;
+    padding: 0.5rem;
+    background: #008339;
+    }
+  .actions .button{
+    color: white;
+    padding: 0.5rem;
+    background: #008339;
+    }
+  
+  .woocommerce-cart-form__contents th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7fd1b3;
+    color: black;
+  }
+.woocommerce-breadcrumb, .woocommerce-message{
     margin-top: 10px;
+}
+.shop_table {
+    overflow-x: auto;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .shop_table td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .shop_table tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .shop_table tr:hover {background-color: #ddd;}
+  .shop_table tr.actions div{
+    color: white;
+    padding: 0.5rem;
+    background: #008339;
+    }
+
+  
+  .shop_table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #7fd1b3;
+    color: black;
+  }
+
+  .woocommerce-MyAccount-navigation ul{
+      list-style: none;
+  }
+
+  .woocommerce-MyAccount-navigation ul{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .woocommerce-MyAccount-content{
+    margin: 2rem 0rem 2rem 0rem;
+    min-height: 10rem;
+  }
+  .products .product{
+      flex-direction: column;
+  }
+  .products{
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 0;
   }

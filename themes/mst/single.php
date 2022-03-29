@@ -18,6 +18,7 @@ get_header();
 
 			get_template_part( 'template-parts/content', get_post_type() );
 			?>
+			<!-- Prints social media links and invites users to share -->
 			<div class="post-social-links">
 				<h3>Share this post</h3>
 				<?php

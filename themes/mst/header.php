@@ -30,6 +30,7 @@
 			<label id="hamburger" for="toggle">&#9776;</label>
 		</div>
 		<div id="nav-logo">
+			<!-- Display logo only if one, else display text from bloginfo -->
 			<?php if (!has_custom_logo()) { ?>
 				<h3 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
 			<?
@@ -42,6 +43,7 @@
 		<input type="checkbox" id="toggle" unchecked/>
 		<div class="mst-menu-container">
 		<?php
+			// Checks if menu is available
 			if (has_nav_menu('menu-1')) {
 				wp_nav_menu(
 					array(
